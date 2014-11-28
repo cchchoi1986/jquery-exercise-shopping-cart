@@ -1,0 +1,50 @@
+.cc-nomargin {
+  margin:0;
+  padding: 0;
+}
+
+.cc-title {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+#total-price {
+  font-size: 35px;
+}
+
+.cc-totalprice {
+  border: 3px solid black;
+  margin: 20px 0 0 0;
+}
+
+.cc-calcbutton {
+  border: 3px solid black;
+  margin: 50px 0 0 0;
+}
+
+.header {
+  margin: 0 0 20px 0;
+  border: 1px solid black;
+}
+
+.cc-item {
+  border: 1px solid black;
+  height: 30px;
+  line-height: 20px;
+}
+
+.cc-bord {
+  border: 1px solid black;
+}
+
+.cc-total-caption {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+.cc-button {
+  background: #EEEEEE;
+  height:29px;
+  border-radius: 10%;
+  box-shadow: 2px black;
+}
