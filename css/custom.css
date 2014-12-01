@@ -4,7 +4,7 @@
 }
 
 .cc-section {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 0;
 }
 
@@ -13,11 +13,13 @@
   background: #33DA33;
   border: 3px solid black;
   border-right: 3px solid black;
+  max-height: 65px;
+  line-height: 65px;
   }
 
 .cc-header {
-  max-height: 40px;
-  line-height: 40px;
+  max-height: 55px;
+  line-height: 55px;
   font-size: 16px;
   border: 1px solid black;
   background: #fff000;
@@ -43,9 +45,16 @@
 
 .cc-item {
   border: 2px solid black;
-  max-height: 33px;
-  line-height: 33px;
+  max-height: 43px;
+  line-height: 43px;
   font-size: 17px;
+}
+.cc-item-even {
+  border: 2px solid black;
+  max-height: 43px;
+  line-height: 43px;
+  font-size: 17px;
+  background: #BBB;
 }
 
 .cc-totalprice {
@@ -61,8 +70,8 @@
 
 .item-name, .item-price, .item-qty, .total-cost {
   border-left: 1px solid black;
-  line-height: 33px;
-  max-height: 33px;
+  /*line-height: 43px;
+  max-height: 43px;*/
 }
 
 .item-name {
@@ -73,10 +82,10 @@
 .cc-button, .quantity {
   background: #EEEEEE;
   border-radius: 5%;
-  max-height: 30px;
-  line-height: 30px;
-  margin: 0.5px 0;
-  padding:0.5px 0;
+  max-height: 43px;
+  line-height: 43px;
+  /*margin: 0.5px 0;
+  padding:0.5px 0;*/
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
@@ -86,23 +95,37 @@
   font-weight: bold;
 }
 
-.quantity:focus {
-  color: red;
+.quantity {
   font-weight: bold;
+  border-radius: 10%;
+  padding: 0 0 0 10px;
+}
+
+.quantity-even {
+  background: #CCC;
+}
+
+.quantity:focus, .quantity:hover{
+  background: white;
+  color: blue;
+  font-weight: bolder;
 }
 
 .cc-menu {
-  overflow: hidden;
-  max-height: 55px;
-  line-height: 55px;
-  font-size: 18px;
-  background: #fff000;
-  border: 1px solid black;
-  font-weight: bold;
+  max-height: 65px;
+  line-height: 65px;
+  font-size: 16px;
+  background: #BC9A20;
+  color: white;
+  border: 3px solid black;
+  padding: 0;
+  text-shadow: 0 0 ;
+  display: block;
+  width: 100%;
+  overflow: none;
 }
 
 .cc-menu:hover {
-  background: #33DA33;
   font-weight: bold;
 }
 
@@ -111,5 +134,25 @@
   font-weight: bold;
 }
 
-.cc-menu-list {
+#cc-checkout {
+  font-size: 17px;
+  border: 1px solid black;
+  background: #BC9A20;
+  max-height: 55px;
+  line-height: 55px;
+  padding: 0 0 0 1%;
+  border-radius: 5%;
+  color: white;
+  box-shadow: black;
+}
+
+.cc-disabled {
+  
+}
+
+#cc-checkout:hover {
+  font-weight: bold;
+  background: #BBB;
+  border: 3px solid #888;
+  color: black;
 }

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <title>JS Shopping Cart Exercise</title>
+    <link rel="icon" href="#">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
@@ -22,8 +23,25 @@
   </head>
   <body class="container-fluid row cc-nomargin">
     <section class="container col-xs-offset-1 col-xs-10 cc-section">
-      <div class="col-xs-12 cc-title">Shopping Cart
+      <div class="col-xs-10 cc-title">
+        Shopping Cart
       </div>
+      <div class="dropdown col-xs-2 cc-nomargin">
+          <button class="btn btn-default dropdown-toggle cc-nomargin cc-menu" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">+ ADD ITEMS
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu row" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Salmon</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Tuna</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Carp</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Pork</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Beef</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Chicken</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Cereal</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Milk</a></li>
+            <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Sugar</a></li>
+          </ul>
+        </div>
       
 
       <div class="cc-header col-xs-12 cc-nomargin">
@@ -47,7 +65,7 @@
       <div id="salmon" class="row col-xs-12 cc-nomargin cc-item">
         <div class="item-name col-xs-2">Salmon
         </div>
-        <div class="item-price col-xs-3">$68.99
+        <div class="item-price col-xs-3">$
         </div>
         <div class="item-qty col-xs-2">
           <input type="number" min="0" max="100" value="0" class="quantity col-xs-12">
@@ -166,23 +184,8 @@
           </div>
           <div id="total-price" class="col-xs-3 cc-nomargin">$00.00
           </div>
-          <div class="dropdown col-xs-2 cc-nomargin">
-            <button class="btn btn-default dropdown-toggle col-xs-12 cc-nomargin cc-menu" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">+ Add Items
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu row" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Salmon</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Tuna</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Carp</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Pork</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Beef</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Chicken</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Cereal</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Milk</a></li>
-              <li role="presentation"><a class="cc-menu-list" role="menuitem" tabindex="-1" href="#">Sugar</a></li>
-            </ul>
-          </div>
-          
+          <button id="cc-checkout" class="col-xs-2 cc-nomargin">CHECKOUT
+          </button>
 
       </div>
 
