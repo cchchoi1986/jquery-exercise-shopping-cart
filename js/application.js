@@ -36,16 +36,14 @@ $(document).ready(function(){
     {name: 'Milk', price: 2011},
     {name: 'Sugar', price: 1001}
   ];
-
-  var refreshTotals = function() {
-    var i = 0;
-    while (i < masterList.length){
-      $($('.cc-item .total-cost')[i]).text(centsToDollars($($('.quantity')[i]).val()*masterList[i].price));
-      $($('.item-price')[i]).text(centsToDollars(masterList[i].price));
-      $('#total-price').text(centsToDollars(totalPrice()));
-      i++;
-    }
-  }
+  
+// updates subtotals and total in html
+  var refreshTotals = function(){
+    $('#total-price').text(centsToDollars(totalPrice()));
+    for (i in subtotal){
+      $($('.cc-item .total-cost')[i]).text(centsToDollars(subtotal[i]));
+    };
+  };
 
   var hihi = function(){
     var i=0;
@@ -64,7 +62,7 @@ $(document).ready(function(){
     }
   };
   hihi();
-  refreshTotals();
+
 // removes parent rows from button clicks
   $(document).on('click','.cc-button',function() {
     $(this).parent().remove();
